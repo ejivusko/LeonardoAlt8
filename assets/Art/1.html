@@ -78,16 +78,7 @@
 		#ex2 img:hover { cursor: url(grab.cur), default; }
 		#ex2 img:active { cursor: url(grabbed.cur), default; }   
   </style>
-    	<script src='jquery-3.6.1.min.js'></script>
-	<script src='jquery.zoom.js'></script>
-	<script>
-		$(document).ready(function(){
-			$('#ex1').zoom();
-			$('#ex2').zoom({ on:'grab' });
-			$('#ex3').zoom({ on:'click' });			 
-			$('#ex4').zoom({ on:'toggle' });
-		});
-	</script>
+    	
 </head>
 <body>
 <div class="vertwrap">
@@ -106,5 +97,15 @@
     </div>
   </div>
 </div>
+    <script src='jquery-3.6.1.min.js'></script>
+	<script src='jquery.zoom.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });			 
+			$('#ex4').zoom({ on:'toggle' });
+		});
+	</script>
 </body>
 </html>
